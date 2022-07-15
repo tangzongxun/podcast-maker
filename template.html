@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="$language$">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>$pagetitle$</title>
+        <link rel="stylesheet" type="text/css" href="/main.css">
+        <meta property="og:title" content="$ogtitle$" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="$path$" />
+        <meta property="og:image" content="$icon$" />
+        <meta property="og:description" content="$description$" />
+    </head>
+    <body>
+    <div class="mainframe">
+        <header>
+            <div>
+                <h1 class="sitetitle hiddenlink"><a href="$homeurl$">$sitetitle$</a></h1>
+                <div>
+                    <a href="$homeurl$">Home</a> &nbsp;
+                    <a href="$feedurl$">RSS</a>
+                </div>
+            </div>
+            <br />
+            <p class="hidden"></p>
+            <div>
+                $if(title)$
+                <h1 class="maintitle">$title$</h1>
+                $endif$
+                $if(date)$
+                <small>$date$</small>
+                $endif$
+            </div>
+        </header>
+        <div class="content">
+$body$
+        $if(audio)$
+        <br>
+        <audio controls>
+            <source src="$audio$" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio> 
+        $endif$
+        </div>
+        <hr />
+        <p>© $author$ $currentYear$ <span class="email-text">&lt;$email$&gt;</span> All Rights Reserved.</p>
+    </div>
+    </body>
+</html>

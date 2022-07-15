@@ -1,0 +1,205 @@
+html{
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial,sans-serif;
+    line-height: 1.875;
+} 
+
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    /* background: url("/s/background-blur-book.jpg") no-repeat center center; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.mainframe{
+    background-color: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    margin:0px auto;
+}
+
+@media (max-width: 550px){
+    .mainframe {
+        padding: 20px 20px 70px 20px;
+    }
+}
+
+@media (max-width: 1000px){
+    .mainframe {
+        max-width:520px;
+        padding: 20px 20px 70px 20px;
+    }
+}
+
+@media (min-width: 1000px){
+    .mainframe {
+        max-width:700px;
+        padding: 20px 100px 70px 100px;
+    }
+}
+
+.maintitle{
+    font-size: 24px;
+}
+
+header {
+    text-align: center;
+}
+
+h1{
+    font-size: 24px;
+}
+
+h2{
+    font-size: 21px;
+}
+
+h3{
+    font-size: 18px;
+}
+
+h4{
+    font-size: 16px;
+}
+
+/* .content p{
+    text-indent: 2em;
+} */
+
+pre{
+    max-width: 100%;
+    overflow: auto;
+    background-color: #f3f3f3;
+    border: solid 1px #999999;
+    padding: 8px;
+    line-height: 1.2;
+}
+
+code{
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+blockquote{
+    border-left: solid 5px #999999;
+    padding-left: 10px;
+}
+
+.content blockquote p{
+    text-indent: 0;
+}
+
+a{
+    border-bottom: 1px dotted;
+    padding-bottom: 1px;
+    text-decoration: none;
+    color: #525E95;
+}
+
+a:hover, a:active, a:focus{
+    text-decoration: none;
+    color: #525E95;
+}
+
+nav{
+    max-width: 200px;
+    margin: 20px 0;
+    border: solid 1px #bbbbbb;
+    background-color: #f7f7f7;
+    padding: 5px;
+    line-height: 1.4;
+    padding: 5px 5px 5px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+
+nav h3{
+    margin: 0 0 5px 10px;
+}
+
+.hidden {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+}
+
+.sitetitle{
+    font-size: 30px;
+    display: block;
+    margin: 10px 0 10px 0;
+}
+
+.avatar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(208, 208, 209);
+    box-shadow: rgba(7, 1, 3, 0.4) 2px 2px 5px;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.hiddenlink a{
+    border-bottom: none;
+    text-decoration: none;
+    color: black;
+}
+
+.hiddenlink a:hover, a:active, a:focus{
+    text-decoration: none;
+    color: black;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+}
+table tr.odd {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+table tr.even {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #efefef;
+}
+.email-text {
+    color:#8f8f8f;
+}
